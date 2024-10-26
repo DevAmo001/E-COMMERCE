@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #021130; 
+  color: #fff;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.amotech-logo {
+  height: 90px;
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 600px;
+  padding: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 18px;
+}
+
+.search-button {
+  background-color: #FF8C00;
+  border-style: solid;
+  border: none;
+  padding-top: 4px;
+  padding-left: -1px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -5px;
+  right: 11px;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart-name {
+  margin-left: 10px; /* Space between icon and text */
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+}
