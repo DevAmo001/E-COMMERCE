@@ -1,14 +1,18 @@
 body {
+  width: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .Header {
   display: flex;
-  flex-direction: row;
   align-items: center;
   background-color: #021130; 
-  color: #fff;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .left-section {
@@ -16,9 +20,32 @@ body {
   align-items: center;
 }
 
+/*default display for larger screen*/
 .amotech-logo {
   height: 90px;
   cursor: pointer;
+  display: inline;
+}
+
+/*default display for larger screen*/
+.logo-mobile {
+  display: none;
+}
+
+/*default display for smaller screen*/
+@media(max-width: 500px) {
+  .logo-mobile {
+    display: none;
+    min-width: 30px;
+  }
+
+  .cart-name,
+  .login-icon,
+  .cart-icon,
+  .cart-quantity,
+  .amotech-logo {
+    display: none;
+  }
 }
 
 .middle-section {
@@ -28,6 +55,7 @@ body {
   justify-content: center;
   max-width: 700px;
   min-width: 10px;
+  margin-left: 10px;
 }
 
 .search-input {
@@ -107,4 +135,9 @@ body {
   height: 50px;
   width: auto;
   cursor: pointer;
+}
+
+.items {
+  display: grid;
+  
 }
